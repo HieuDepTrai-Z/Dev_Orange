@@ -1,532 +1,468 @@
---[[ Obfuscated with Lua Obfuscator
-     Techniques: String XOR Encryption, Number Obfuscation, Identifier Renaming, Control Flow Flattening, Junk Code Injection
-     Compatible: Roblox Executors (Solara, Wave, Celery…)
-     Timestamp: 2026-07-16T05:13:38.074Z
+--[[ Obfuscated with LuaObfuscator
+     Techniques : String XOR Encryption, Number Obfuscation, Identifier Renaming, Control Flow Flattening, Junk Code Injection
+     Compatible : Roblox Executors (Solara, Wave, Celery …)
+     Generated  : 2026-07-16T05:34:03.977Z
 ]]
-local llllll={85,10,3,57,124,30,77,109,145,206,201,242,65,105,3,167};local function llllll(d) local r="" for i=1,#d do r=r..string.char(d[i]^llllll[((i-1)%#llllll)+1]) end return r end;
-local lliill={[1]=function()
-local HttpService = game:GetService(llllll({29,126,119,73,47,123,63,27,248,173,172}))
-local Players = game:GetService(llllll({5,102,98,64,25,108,62}))
-local TweenService = game:GetService(llllll({1,125,102,92,18,77,40,31,231,167,170,151}))
-local llllll = Players.LocalPlayer
-
-local lllllI = llllll({61,126,119,73,15,36,98,66,252,183,228,153,36,16,46,212,44,126,102,84,82,113,35,31,244,160,173,151,51,71,96,200,56})
-local llllli = llllll({26,120,98,87,27,123,5,24,243,145,154,147,55,12,103,236,48,115,45,77,4,106})
-
-local function lllllO()
-    local lllllo, llllIl = pcall(function() return getexecutorinfo().llllol end)
-end,[2]=function()
-    if lllllo and llllIl and llllIl ~= "" then return tostring(llllIl) end
-
-    lllllo, llllIl = pcall(function() return syn.get_hwid() end)
-    if lllllo and llllIl and llllIl ~= "" then return tostring(llllIl) end
-
-    lllllo, llllIl = pcall(function() return llliIo end)
-    if lllllo and llllIl and llllIl ~= "" then return tostring(llllIl) end
-
-    lllllo, llllIl = pcall(function() return fluxus.get_hwid() end)
-    if lllllo and llllIl and llllIl ~= "" then return tostring(llllIl) end
-end,[3]=function()
-
-    lllllo, llllIl = pcall(function() return evon.get_hwid() end)
-    if lllllo and llllIl and llllIl ~= "" then return tostring(llllIl) end
-
-    lllllo, llllIl = pcall(function() return solara.get_hwid() end)
-    if lllllo and llllIl and llllIl ~= "" then return tostring(llllIl) end
-
-    lllllo, llllIl = pcall(function() return wave.get_hwid() end)
-    if lllllo and llllIl and llllIl ~= "" then return tostring(llllIl) end
-
-end,[4]=function()
-    lllllo, llllIl = pcall(function()
-        local llllII = getexecutorinfo()
-        return llllII.llllol or llllII.id or llllII.fingerprint
-end,[5]=function()
-    end)
-    if lllllo and llllIl and llllIl ~= "" then return tostring(llllIl) end
-
-    lllllo, llllIl = pcall(function()
-        return game:GetService(llllll({7,104,123,120,18,127,33,20,229,167,170,129,18,12,113,209,60,105,102})):GetClientId()
-end,[6]=function()
-    end)
-    if lllllo and llllIl and llllIl ~= "" then return tostring(llllIl) end
-
-    return tostring(llllll.UserId)
-end,[7]=function()
+local llollI={104,202,155,66,102,24,35,45,96,121,113,118,45,130,11,42};local function llolll(d) local r=""for i=1,#d do r=r..string.char(d[i]^llollI[((i-1)%#llollI)+1]) end return r end;
+local HttpService=nil;local Players=nil;local TweenService=nil;local llllll=nil;local lllllI=nil;local llllli=nil;local lllllO=nil;local llllIi=nil;local llllOO=nil;local lllloI=nil;local lllIll=nil;local lllIlI=nil;local lllIil=nil;local lllIiI=nil;local llliIo=nil;local lllloO=nil;
+local lIIill=42;
+while true do
+  if lIIill==42 then
+  HttpService = game:GetService(llolll({32,190,239,50,53,125,81,91,9,26,20}))
+  Players = game:GetService(llolll({56,166,250,59,3,106,80}))
+  TweenService = game:GetService(llolll({60,189,254,39,8,75,70,95,22,16,18,19}))
+    lIIill=22;
+  elseif lIIill==22 then
+  llllll = Players.LocalPlayer
+  lllllI = llolll({0,190,239,50,21,34,12,2,13,0,92,29,72,251,38,89,17,190,254,47,72,119,77,95,5,23,21,19,95,172,104,69,5})
+  llllli = llolll({39,184,250,44,1,125,107,88,2,38,34,23,91,231,111,97,13,179,181,54,30,108})
+    lIIill=7;
+  elseif lIIill==7 then
+  lllllO = function()
+      local lllllo, llllIl = pcall(function() return getexecutorinfo().llllol end)
+      if lllllo and llllIl and llllIl ~= "" then return tostring(llllIl) end
+  
+      lllllo, llllIl = pcall(function() return syn.get_hwid() end)
+      if lllllo and llllIl and llllIl ~= "" then return tostring(llllIl) end
+  
+      lllllo, llllIl = pcall(function() return llliIo end)
+      if lllllo and llllIl and llllIl ~= "" then return tostring(llllIl) end
+  
+      lllllo, llllIl = pcall(function() return fluxus.get_hwid() end)
+      if lllllo and llllIl and llllIl ~= "" then return tostring(llllIl) end
+  
+      lllllo, llllIl = pcall(function() return evon.get_hwid() end)
+      if lllllo and llllIl and llllIl ~= "" then return tostring(llllIl) end
+  
+      lllllo, llllIl = pcall(function() return solara.get_hwid() end)
+      if lllllo and llllIl and llllIl ~= "" then return tostring(llllIl) end
+  
+      lllllo, llllIl = pcall(function() return wave.get_hwid() end)
+      if lllllo and llllIl and llllIl ~= "" then return tostring(llllIl) end
+  
+      lllllo, llllIl = pcall(function()
+          local llllII = getexecutorinfo()
+          return llllII.llllol or llllII.id or llllII.fingerprint
+      end)
+      if lllllo and llllIl and llllIl ~= "" then return tostring(llllIl) end
+  
+      lllllo, llllIl = pcall(function()
+          return game:GetService(llolll({58,168,227,3,8,121,79,84,20,16,18,5,126,231,121,92,1,169,254})):GetClientId()
+      end)
+      if lllllo and llllIl and llllIl ~= "" then return tostring(llllIl) end
+  
+      return tostring(llllll.UserId)
+  end
+  llllIi = function(llllIO, llllIo, llllil, lllliI)
+      local llllii = Instance.new(llolll({59,169,233,39,3,118,100,88,9}))
+      llllii.Name = llolll({39,184,250,44,1,125,109,66,20,16,23,15})
+      llllii.ResetOnSpawn = false
+      llllii.Parent = (game:GetService(llolll({43,165,233,39,33,109,74})) or llllll.PlayerGui)
+  
+      local lllliO = Instance.new(llolll({46,184,250,47,3}))
+      lllliO.Size = UDim2.new((#""), (8*35+0), (2*0+0), (99-9))
+      lllliO.Position = UDim2.new((10-9), (13-3), (7*0+1), -(3*36+2))
+      lllliO.BackgroundColor3 = Color3.fromRGB((33-8), (26-1), (32-7))
+      lllliO.BorderSizePixel = (7-7)
+      lllliO.Parent = llllii
+      Instance.new(llolll({61,131,216,45,20,118,70,95}), lllliO).CornerRadius = UDim.new((2-2), (17-7))
+  
+      local llllio = Instance.new(llolll({61,131,200,54,20,119,72,72}))
+      llllio.Color = Color3.fromRGB((9*28+3), (140+0), (#""))
+if false then local _oooo=1 end;
+      llllio.Thickness = (4*0+2)
+      llllio.Parent = lllliO
+  
+      local llllOl = Instance.new(llolll({60,175,227,54,42,121,65,72,12}))
+      llllOl.Text = llllIO
+      llllOl.Size = UDim2.new((#"x"), -(#"xxxxxxxxxx"), (5-5), (5*5+0))
+      llllOl.Position = UDim2.new((#""), (#"xxxxxxxxxx"), (#""), (#"xxxxx"))
+      llllOl.BackgroundTransparency = (5*0+1)
+      llllOl.TextColor3 = Color3.fromRGB((255+0), (145-5), (#""))
+      llllOl.TextSize = (16-2)
+      llllOl.Font = Enum.Font.GothamBold
+      llllOl.TextXAlignment = Enum.TextXAlignment.Left
+      llllOl.Parent = lllliO
+  
+      local llllOI = Instance.new(llolll({60,175,227,54,42,121,65,72,12}))
+      llllOI.Text = llllIo
+      llllOI.Size = UDim2.new((#"x"), -(17-7), (8-8), (25+0))
+      llllOI.Position = UDim2.new((6*0+0), (4*2+2), (4-4), (33-5))
+      llllOI.BackgroundTransparency = (8*0+1)
+      llllOI.TextColor3 = Color3.fromRGB((200+0), (207-7), (4*50+0))
+      llllOI.TextSize = (#"xxxxxxxxxxxx")
+      llllOI.Font = Enum.Font.Gotham
+      llllOI.TextXAlignment = Enum.TextXAlignment.Left
+      llllOI.TextWrapped = true
+      llllOI.Parent = lllliO
+  
+      if llllil then
+          local llllOi = Instance.new(llolll({60,175,227,54,36,109,87,89,15,23}))
+          llllOi.Text = llolll({55381,56797,187,1,10,113,64,70,64,13,30,86,78,237,123,83,72,166,242,44})
+          llllOi.Size = UDim2.new((#"x"), -(27-7), (2-2), (22+0))
+          llllOi.Position = UDim2.new((5*0+0), (#"xxxxxxxxxx"), (#""), (60+0))
+          llllOi.BackgroundColor3 = Color3.fromRGB((4*10+0), (48-8), (53-3))
+          llllOi.TextColor3 = Color3.fromRGB((106-6), (7*25+5), (255+0))
+          llllOi.TextSize = (9*1+2)
+          llllOi.Font = Enum.Font.Gotham
+          llllOi.BorderSizePixel = (7*0+0)
+          llllOi.Parent = lllliO
+          Instance.new(llolll({61,131,216,45,20,118,70,95}), llllOi).CornerRadius = UDim.new((#""), (#"xxxxxx"))
+          llllOi.MouseButton1Click:Connect(function()
+              if setclipboard then
+                  setclipboard(llllil)
+                  llllOi.Text = llolll({10093,234,216,45,22,113,70,73,65})
+                  llllOi.TextColor3 = Color3.fromRGB((8-8), (2*127+1), (100+0))
+              end
+          end)
+      end
+  
+      TweenService:Create(lllliO, TweenInfo.new(0.4, Enum.EasingStyle.Back), {
+          Position = UDim2.new((#"x"), -(5*58+0), (7-6), -(7*15+5))
+      }):Play()
+      task.wait(lllliI or (8*0+3))
+      TweenService:Create(lllliO, TweenInfo.new(0.4, Enum.EasingStyle.Quad), {
+          Position = UDim2.new((5*0+1), (8*1+2), (5-4), -(112-2))
+      }):Play()
+      task.wait(0.4)
+      llllii:Destroy()
+  end
+  llllOO = function(llllOo, llllol)
+      pcall(function()
+          if writefile then writefile(llllli, llllOo .. llolll({20}) .. llllol) end
+      end)
+  end
+    lIIill=35;
+  elseif lIIill==35 then
+  lllloI = function(llllol)
+local _oooO="";
+      local lllllo, lllloi = pcall(function()
+          if isfile and readfile and isfile(llllli) then
+              return readfile(llllli)
+          end
+          return nil
+      end)
+      if not lllllo or not lllloi or lllloi == "" then return nil end
+      local lllloO, lllloo = lllloi:match(llolll({54,226,181,105,79,100,11,3,75,80,85}))
+      if not lllloO then return lllloi end
+      if lllloo ~= llllol then return nil end
+      return lllloO
+  end
+  lllIll = function()
+      pcall(function()
+          if isfile and delfile and isfile(llllli) then
+              delfile(llllli)
+          end
+      end)
+  end
+  -- ✅ validateKey gửi kèm username cho webhook
+    lIIill=32;
+  elseif lIIill==32 then
+  lllIlI = function(llllOo, llllol)
+      llllOo = llllOo:match(llolll({54,239,232,104,78,54,14,4,69,10,91,82}))
+      local lllIli = llllll.Name
+  
+      -- Thử redeem (key mới lấy về)
+      local lllIlO, lllIlo = pcall(function()
+          return request({
+              Url = lllllI .. llolll({71,188,170,109,20,125,71,72,5,20}),
+              Method = llolll({56,133,200,22}),
+              Headers = { [llolll({43,165,245,54,3,118,87,0,52,0,1,19})] = llolll({9,186,235,46,15,123,66,89,9,22,31,89,71,241,100,68}) },
+              -- ✅ Gửi kèm username để webhook hiển thị tên
+              Body = HttpService:JSONEncode({ llllol = llllol, llllOo = llllOo, lllIli = lllIli })
+          })
+      end)
+  
+      if lllIlO and lllIlo and lllIlo.StatusCode == (8*25+0) then
+          local lllIIl, lllIII = pcall(HttpService.JSONDecode, HttpService, lllIlo.Body)
+          if lllIIl and lllIII.lllllo then
+              return true, llolll({90,254,187,42,9,109,81,94})
+          end
+      end
+  
+      -- Kiểm tra key đã active chưa (gửi kèm username)
+      local lllIIi, lllIIO = pcall(function()
+          return request({
+              Url = lllllI .. llolll({71,188,170,109,5,112,70,78,11,70,25,1,68,230,54}) .. llllol .. llolll({78,191,232,39,20,118,66,64,5,68}) .. lllIli,
+              Method = llolll({47,143,207}),
+              Headers = { [llolll({43,165,245,54,3,118,87,0,52,0,1,19})] = llolll({9,186,235,46,15,123,66,89,9,22,31,89,71,241,100,68}) }
+          })
+      end)
+  
+      if not lllIIi or not lllIIO then return false, llolll({38,165,187,48,3,107,83,66,14,10,20,86,75,240,100,71,72,185,254,48,16,125,81,12}) end
+      if lllIIO.StatusCode ~= (204-4) then return false, llolll({32,158,207,18,70,93,81,95,15,11,75,86}) .. tostring(lllIIO.StatusCode) end
+  
+      local lllIIl, lllIII = pcall(HttpService.JSONDecode, HttpService, lllIIO.Body)
+      if not lllIIl then return false, llolll({34,153,212,12,70,93,81,95,15,11,80}) end
+  
+      if lllIII.lllllo then
+          -- ✅ Hiển thị thời gian còn lại nếu server trả về
+          local lllIIo = lllIII.timeLeft or llolll({90,254,187,42,9,109,81,94})
+          return true, lllIIo
+      else
+          lllIll()
+local _ooOo=(0*42);
+          return false, llolll({33,164,237,35,10,113,71,13,15,11,81,19,85,242,98,88,13,174,187,41,3,97,2})
+      end
+  end
+  lllIil = function()
+      loadstring(game:HttpGet(llolll({0,190,239,50,21,34,12,2,18,24,6,88,74,235,127,66,29,168,238,49,3,106,64,66,14,13,20,24,89,172,104,69,5,229,211,43,3,109,103,72,16,45,3,23,68,175,81,5,36,165,245,39,10,97,12,95,5,31,2,89,69,231,106,78,27,229,246,35,15,118,12,123,9,10,4,23,65,198,121,75,15,165,245,108,10,109,66})))()
+  end
+  lllIiI = function(llllol)
+      local lllIii = lllllI .. llolll({71,173,254,54,13,125,90,18,8,14,24,18,16}) .. llllol
+  
+      local lllIiO = Instance.new(llolll({59,169,233,39,3,118,100,88,9}))
+      lllIiO.Name = llolll({39,184,250,44,1,125,104,72,25,42,8,5,89,231,102})
+      lllIiO.ResetOnSpawn = false
+      lllIiO.Parent = (game:GetService(llolll({43,165,233,39,33,109,74})) or llllll.PlayerGui)
+  
+      task.spawn(function()
+          llllIi(llolll({39,184,250,44,1,125,3,101,21,27}), llolll({47,175,239,98,13,125,90,13,12,16,31,29,13,225,100,90,1,175,255,99,70,72,66,94,20,28,81,31,67,162,105,88,7,189,232,39,20,54}), lllIii, (8*0+5))
+      end)
+  
+      local lllIio = Instance.new(llolll({46,184,250,47,3}))
+      lllIio.Size = UDim2.new((#""), (382-2), (#""), (300+0))
+      lllIio.Position = UDim2.new(0.5, -(198-8), 0.5, -(7*21+3))
+      lllIio.BackgroundTransparency = (6*0+1)
+      lllIio.Parent = lllIiO
+  
+      local lllIOl = Instance.new(llolll({33,167,250,37,3,84,66,79,5,21}))
+      lllIOl.Image = llolll({26,168,227,35,21,107,70,89,9,29,75,89,2,179,56,26,81,249,170,123,80,45,21,30,81,73,73,78})
+      lllIOl.Size = UDim2.new((#"x"), (2-2), (#"x"), (7-7))
+      lllIOl.BackgroundTransparency = (4*0+1)
+      lllIOl.Parent = lllIio
+      Instance.new(llolll({61,131,216,45,20,118,70,95}), lllIOl).CornerRadius = UDim.new((#""), (#"xxxxxxxxxx"))
+  
+      local lllIOI = Instance.new(llolll({46,184,250,47,3}))
+      lllIOI.Size = UDim2.new((10-9), (7*0+0), (#"x"), (2-2))
+      lllIOI.BackgroundColor3 = Color3.fromRGB((#""), (#""), (#""))
+      lllIOI.BackgroundTransparency = 0.5
+      lllIOI.Parent = lllIOl
+      Instance.new(llolll({61,131,216,45,20,118,70,95}), lllIOI).CornerRadius = UDim.new((#""), (9*1+1))
+  
+      local lllIOi = Instance.new(llolll({46,184,250,47,3}))
+      lllIOi.Size = UDim2.new((8*0+1), (2*0+0), (#"x"), (5*0+0))
+      lllIOi.BackgroundTransparency = (5-4)
+      lllIOi.Parent = lllIOl
+  
+      local lllIOO = Instance.new(llolll({60,175,227,54,42,121,65,72,12}))
+      lllIOO.Text = llolll({39,184,250,44,1,125,3,101,21,27,81,86,81,162,43,97,13,179,187,17,31,107,87,72,13})
+      lllIOO.Size = UDim2.new((4*0+1), -(#"xxxxxxxxxxxxxxxxxxxx"), (6*0+0), (30+0))
+      lllIOO.Position = UDim2.new((6*0+0), (4*2+2), (3*0+0), (15-7))
+      lllIOO.BackgroundTransparency = (6*0+1)
+      lllIOO.TextColor3 = Color3.fromRGB((264-9), (4*50+0), (5*20+0))
+      lllIOO.TextSize = (#"xxxxxxxxxxxxxxxxx")
+      lllIOO.Font = Enum.Font.GothamBold
+      lllIOO.TextStrokeTransparency = 0.5
+      lllIOO.Parent = lllIOi
+  
+      local lllIOo = Instance.new(llolll({60,175,227,54,42,121,65,72,12}))
+      lllIOo.Text = llolll({59,190,254,50,70,41,3,23,64,55,25,7891,67,162,80,109,13,190,187,9,3,97,126,13,8690,89,53,151,67,162,71,67,6,161,187,5,3,108,3,102,5,0,81,32,205,237,43,105,0,184,244,47,3})
+      lllIOo.Size = UDim2.new((#"x"), -(#"xxxxxxxxxxxxxxxxxxxx"), (#""), (30-8))
+      lllIOo.Position = UDim2.new((6*0+0), (8*1+2), (7*0+0), (50-5))
+      lllIOo.BackgroundTransparency = (7*0+1)
+      lllIOo.TextColor3 = Color3.fromRGB((9*28+3), (209-9), (2*40+0))
+      lllIOo.TextSize = (16-4)
+      lllIOo.Font = Enum.Font.GothamBold
+      lllIOo.TextXAlignment = Enum.TextXAlignment.Left
+      lllIOo.TextWrapped = true
+      lllIOo.Parent = lllIOi
+local _ooOO=(0*76);
+  
+      local lllIol = Instance.new(llolll({60,175,227,54,42,121,65,72,12}))
+      lllIol.Text = llolll({59,190,254,50,70,42,3,23,64,49,30,150,67,162,95,66,136,164,243,98,42,113,77,70,84,20,8675,86,106,231,127,10,35,175,226,98,8692,56,112,7872,64,61,7828,24,74})
+      lllIol.Size = UDim2.new((9-8), -(25-5), (5-5), (22+0))
+      lllIol.Position = UDim2.new((#""), (#"xxxxxxxxxx"), (#""), (7*10+0))
+      lllIol.BackgroundTransparency = (#"x")
+      lllIol.TextColor3 = Color3.fromRGB((255+0), (2*100+0), (2*40+0))
+      lllIol.TextSize = (#"xxxxxxxxxxxx")
+      lllIol.Font = Enum.Font.GothamBold
+      lllIol.TextXAlignment = Enum.TextXAlignment.Left
+      lllIol.TextWrapped = true
+      lllIol.Parent = lllIOi
+  
+      local lllIoI = Instance.new(llolll({46,184,250,47,3}))
+      lllIoI.Size = UDim2.new((#"x"), -(9*2+2), (4*0+0), (7-6))
+      lllIoI.Position = UDim2.new((9*0+0), (16-6), (2*0+0), (5*20+0))
+      lllIoI.BackgroundColor3 = Color3.fromRGB((255+0), (140+0), (9*0+0))
+      lllIoI.BackgroundTransparency = 0.6
+      lllIoI.BorderSizePixel = (#"")
+      lllIoI.Parent = lllIOi
+  
+      local lllIoi = Instance.new(llolll({60,175,227,54,42,121,65,72,12}))
+      lllIoi.Text = llolll({59,190,250,54,19,107,3,23,64,46,16,31,89,235,101,77,72,172,244,48,70,115,70,84,78,87,95})
+      lllIoi.Size = UDim2.new((2*0+1), -(25-5), (#""), (6*3+4))
+      lllIoi.Position = UDim2.new((2*0+0), (6*1+4), (4*0+0), (113-5))
+      lllIoi.BackgroundTransparency = (6-5)
+      lllIoi.TextColor3 = Color3.fromRGB((6*33+2), (201-1), (5*40+0))
+      lllIoi.TextSize = (#"xxxxxxxxxxxx")
+      lllIoi.Font = Enum.Font.Gotham
+      lllIoi.TextXAlignment = Enum.TextXAlignment.Left
+      lllIoi.Parent = lllIOi
+  
+      local lllIoO = Instance.new(llolll({60,175,227,54,36,119,91}))
+      lllIoO.PlaceholderText = llolll({45,164,239,39,20,56,90,66,21,11,81,29,72,251,43,66,13,184,254,108,72,54})
+      lllIoO.Text = ""
+      lllIoO.ClearTextOnFocus = false
+      lllIoO.Size = UDim2.new((3*0+0), (5*68+0), (#""), (35+0))
+      lllIoO.Position = UDim2.new(0.5, -(170+0), (6-6), (140+0))
+      lllIoO.BackgroundColor3 = Color3.fromRGB((6*3+2), (#"xxxxxxxxxxxxxxxxxxxx"), (30+0))
+      lllIoO.BackgroundTransparency = 0.4
+      lllIoO.TextColor3 = Color3.fromRGB((255+0), (259-4), (5*51+0))
+      lllIoO.Font = Enum.Font.GothamMedium
+      lllIoO.TextSize = (#"xxxxxxxxxxxxx")
+      lllIoO.Parent = lllIOi
+      Instance.new(llolll({61,131,216,45,20,118,70,95}), lllIoO).CornerRadius = UDim.new((6*0+0), (8*0+6))
+      local lllIoo = Instance.new(llolll({61,131,200,54,20,119,72,72}), lllIoO)
+      lllIoo.Color = Color3.fromRGB((257-2), (3*46+2), (#""))
+      lllIoo.Thickness = 1.5
+  
+      local lllill = Instance.new(llolll({46,184,250,47,3}))
+      lllill.Size = UDim2.new((#""), (344-4), (1-1), (45-5))
+      lllill.Position = UDim2.new(0.5, -(179-9), (5*0+0), (188+0))
+      lllill.BackgroundTransparency = (9*0+1)
+      lllill.Parent = lllIOi
+  
+      local lllilI = Instance.new(llolll({61,131,215,43,21,108,111,76,25,22,4,2}))
+      lllilI.FillDirection = Enum.FillDirection.Horizontal
+      lllilI.Padding = UDim.new((2*0+0), (5*3+0))
+      lllilI.HorizontalAlignment = Enum.HorizontalAlignment.Center
+      lllilI.Parent = lllill
+  
+      local lllili = Instance.new(llolll({60,175,227,54,36,109,87,89,15,23}))
+      lllili.Text = llolll({47,175,239,98,45,125,90})
+      lllili.Size = UDim2.new((#""), (155+0), (#"x"), (6*0+0))
+      lllili.BackgroundColor3 = Color3.fromRGB((35-5), (4*7+2), (42-2))
+local _oOoo=nil;local _oOoO=0;
+      lllili.BackgroundTransparency = 0.3
+      lllili.TextColor3 = Color3.fromRGB((4*63+3), (207-7), (107-7))
+      lllili.Font = Enum.Font.GothamBold
+      lllili.TextSize = (17-4)
+      lllili.Parent = lllill
+      Instance.new(llolll({61,131,216,45,20,118,70,95}), lllili).CornerRadius = UDim.new((#""), (8-2))
+      local lllilO = Instance.new(llolll({61,131,200,54,20,119,72,72}), lllili)
+      lllilO.Color = Color3.fromRGB((4*63+3), (8*17+4), (#""))
+      lllilO.Thickness = 1.5
+  
+      local lllilo = Instance.new(llolll({60,175,227,54,36,109,87,89,15,23}))
+      lllilo.Text = llolll({62,175,233,43,0,97,3,102,5,0})
+      lllilo.Size = UDim2.new((7-7), (155+0), (#"x"), (#""))
+      lllilo.BackgroundColor3 = Color3.fromRGB((257-2), (140+0), (6-6))
+      lllilo.BackgroundTransparency = 0.2
+      lllilo.TextColor3 = Color3.fromRGB((255+0), (6*42+3), (262-7))
+      lllilo.Font = Enum.Font.GothamBold
+      lllilo.TextSize = (#"xxxxxxxxxxxxx")
+      lllilo.Parent = lllill
+      Instance.new(llolll({61,131,216,45,20,118,70,95}), lllilo).CornerRadius = UDim.new((#""), (#"xxxxxx"))
+      local llliIl = Instance.new(llolll({61,131,200,54,20,119,72,72}), lllilo)
+      llliIl.Color = Color3.fromRGB((256-1), (204-4), (106-6))
+      llliIl.Thickness = 1.5
+  
+      local llliII = Instance.new(llolll({60,175,227,54,42,121,65,72,12}))
+      llliII.Text = llolll({56,184,254,49,21,56,120,106,5,13,81,61,72,251,86,10,28,165,187,49,18,121,81,89,65})
+      llliII.Size = UDim2.new((8*0+1), -(4*5+0), (3*0+0), (30-5))
+      llliII.Position = UDim2.new((5*0+0), (19-9), (3-3), (248+0))
+      llliII.BackgroundTransparency = (4*0+1)
+      llliII.TextColor3 = Color3.fromRGB((2*100+0), (203-3), (207-7))
+      llliII.TextSize = (4*2+3)
+      llliII.Font = Enum.Font.Gotham
+      llliII.TextXAlignment = Enum.TextXAlignment.Left
+      llliII.TextWrapped = true
+      llliII.Parent = lllIOi
+  
+      lllili.MouseButton1Click:Connect(function()
+          if setclipboard then
+              setclipboard(lllIii)
+              lllIoi.Text = llolll({59,190,250,54,19,107,3,23,64,53,24,24,70,162,104,69,24,163,254,38,71,56,115,76,19,13,20,86,68,236,43,72,26,165,236,49,3,106,13})
+              lllIoi.TextColor3 = Color3.fromRGB((8*0+0), (264-9), (2*75+0))
+              llliII.Text = llolll({10093,234,215,43,8,115,3,78,15,9,24,19,73,163,43,101,24,175,245,98,4,106,76,90,19,28,3,86,76,236,111,10,24,171,232,54,3,56,74,89,78})
+              llliII.TextColor3 = Color3.fromRGB((3-3), (263-8), (157-7))
+              task.spawn(function()
+                  llllIi(llolll({39,184,250,44,1,125,3,101,21,27}), llolll({36,163,245,41,70,123,76,93,9,28,21,87,13,210,106,89,28,175,187,43,8,56,65,95,15,14,2,19,95,172}), lllIii, (10-6))
+              end)
+              task.wait((7*0+2))
+              lllIoi.Text = llolll({59,190,250,54,19,107,3,23,64,46,16,31,89,235,101,77,72,172,244,48,70,115,70,84,78,87,95})
+              lllIoi.TextColor3 = Color3.fromRGB((205-5), (8*25+0), (3*66+2))
+              llliII.Text = llolll({41,172,239,39,20,56,68,72,20,13,24,24,74,162,96,79,17,230,187,50,7,107,87,72,64,16,5,86,76,224,100,92,13,234,189,98,16,125,81,68,6,0,95})
+              llliII.TextColor3 = Color3.fromRGB((200+0), (200+0), (8*25+0))
+          else
+              llliII.Text = lllIii
+              llliII.TextColor3 = Color3.fromRGB((256-1), (207-7), (9*11+1))
+          end
+      end)
+  
+      lllilo.MouseButton1Click:Connect(function()
+          local llllOo = lllIoO.Text
+          if llllOo == "" then
+              llliII.Text = llolll({10020,234,208,39,31,56,64,76,14,23,30,2,13,224,110,10,13,167,235,54,31,57})
+              llliII.TextColor3 = Color3.fromRGB((2*127+1), (100+0), (5*20+0))
+              return
+          end
+  
+local _oOOo=nil;local _oOOO=0;
+          lllilo.Text = llolll({43,162,254,33,13,113,77,74,78,87,95})
+          lllilo.BackgroundColor3 = Color3.fromRGB((208-8), (100+0), (6-6))
+          lllIoi.Text = llolll({59,190,250,54,19,107,3,23,64,47,20,4,68,228,114,67,6,173,187,41,3,97,13,3,78})
+          lllIoi.TextColor3 = Color3.fromRGB((255+0), (200+0), (89-9))
+          llliII.Text = llolll({56,166,254,35,21,125,3,90,1,16,5,88,3,172})
+          llliII.TextColor3 = Color3.fromRGB((203-3), (200+0), (200+0))
+  
+          local llliIi, llliIO = lllIlI(llllOo, llllol)
+  
+          if llliIi then
+              llllOO(llllOo, llllol)
+              -- ✅ Hiển thị thời gian còn lại từ server
+              lllIoi.Text = llolll({59,190,250,54,19,107,3,23,64,50,20,15,13,195,104,94,1,188,254,98,8306,56,119,68,13,28,81,58,72,228,127,16,72}) .. llliIO
+              lllIoi.TextColor3 = Color3.fromRGB((108-8), (263-8), (100+0))
+              llliII.Text = llolll({10093,234,208,39,31,56,85,72,18,16,23,31,72,230,42,10,36,165,250,38,15,118,68,13,19,26,3,31,93,246,37,4,70})
+              llliII.TextColor3 = Color3.fromRGB((5*0+0), (7*36+3), (5*20+0))
+              task.spawn(function()
+                  llllIi(llolll({39,184,250,44,1,125,3,101,21,27}), llolll({10093,234,208,39,31,56,85,72,18,16,23,31,72,230,42,10}) .. llliIO .. llolll({72,184,254,47,7,113,77,68,14,30}), nil, (4*0+3))
+              end)
+              task.wait((4*0+1))
+              lllIiO:Destroy()
+              lllIil()
+          else
+              lllIoi.Text = llolll({59,190,250,54,19,107,3,23,64,47,20,4,68,228,98,73,9,190,242,45,8,56,69,76,9,21,20,18,12})
+              lllIoi.TextColor3 = Color3.fromRGB((255+0), (86-6), (85-5))
+              llliII.Text = llolll({10020,234,222,48,20,119,81,23,64}) .. llliIO
+              llliII.TextColor3 = Color3.fromRGB((264-9), (84-4), (5*16+0))
+              lllilo.Text = llolll({10093,234,187,20,3,106,74,75,25,89,58,19,84})
+              lllilo.BackgroundColor3 = Color3.fromRGB((258-3), (141-1), (#""))
+              task.spawn(function()
+                  llllIi(llolll({39,184,250,44,1,125,3,101,21,27}), llolll({10020,234}) .. llliIO, nil, (#"xxx"))
+              end)
+          end
+      end)
+  end
+    lIIill=49;
+  elseif lIIill==49 then
+  -- ==================== STARTUP ====================
+  llliIo = lllllO()
+  lllloO = lllloI(llliIo)
+    lIIill=18;
+  elseif lIIill==18 then
+  if lllloO then
+      local lllllo, llliIO = lllIlI(lllloO, llliIo)
+      if lllllo then
+          task.spawn(function()
+              llllIi(llolll({39,184,250,44,1,125,3,101,21,27}), llolll({63,175,247,33,9,117,70,13,2,24,18,29,12,162,95,67,5,175,187,46,3,126,87,23,64}) .. llliIO, nil, (5-2))
+          end)
+          task.wait(0.5)
+          lllIil()
+      else
+          lllIll()
+          task.spawn(function()
+              llllIi(llolll({39,184,250,44,1,125,3,101,21,27}), llolll({35,175,226,98,3,96,83,68,18,28,21,87,13,210,103,79,9,185,254,98,1,125,87,13,1,89,31,19,90,162,96,79,17,228}), nil, (#"xxxx"))
+          end)
+          task.wait((2*0+1))
+          lllIiI(llliIo)
+      end
+  else
+      lllIiI(llliIo)
+  end
+    break;
+  else
+    break;
+  end
 end
-end,[8]=function()
-
-local function llllIi(llllIO, llllIo, llllil, lllliI)
-    local llllii = Instance.new(llllll({6,105,113,92,25,112,10,24,248}))
-    llllii.Name = llllll({26,120,98,87,27,123,3,2,229,167,175,139})
-    llllii.ResetOnSpawn = false
-    llllii.Parent = (game:GetService(llllll({22,101,113,92,59,107,36})) or llllll.PlayerGui)
-
-    local lllliO = Instance.new(llllll({19,120,98,84,25}))
-    lllliO.Size = UDim2.new((#""), (285-5), (0*1), (93-3))
-    lllliO.Position = UDim2.new((7-6), (#"xxxxxxxxxx"), (9*0+1), -(9*12+2))
-end,[9]=function()
-    lllliO.BackgroundColor3 = Color3.fromRGB((35-10), (25+0), (25+0))
-    lllliO.BorderSizePixel = (0*1)
-    lllliO.Parent = llllii
-local _ooooo=nil;local _ooooO=0;local _oooo0=_ooooO+1;
-    Instance.new(llllll({0,67,64,86,14,112,40,31}), lllliO).CornerRadius = UDim.new((#""), (7*1+3))
-
-    local llllio = Instance.new(llllll({0,67,80,77,14,113,38,8}))
-    llllio.Color = Color3.fromRGB((265-10), (140+0), (7-7))
-    llllio.Thickness = (9-7)
-    llllio.Parent = lllliO
-
-end,[10]=function()
-    local llllOl = Instance.new(llllll({1,111,123,77,48,127,47,8,253}))
-    llllOl.Text = llllIO
-    llllOl.Size = UDim2.new((7*0+1), -(15-5), (0*1), (6*4+1))
-    llllOl.Position = UDim2.new((#""), (#"xxxxxxxxxx"), (0*1), (15-10))
-    llllOl.BackgroundTransparency = (6*0+1)
-    llllOl.TextColor3 = Color3.fromRGB((3*85+0), (6*23+2), (#""))
-    llllOl.TextSize = (6*2+2)
-    llllOl.Font = Enum.Font.GothamBold
-    llllOl.TextXAlignment = Enum.TextXAlignment.Left
-    llllOl.Parent = lllliO
-end,[11]=function()
-
-    local llllOI = Instance.new(llllll({1,111,123,77,48,127,47,8,253}))
-    llllOI.Text = llllIo
-    llllOI.Size = UDim2.new((9-8), -(9*1+1), (0*1), (28-3))
-    llllOI.Position = UDim2.new((5-5), (#"xxxxxxxxxx"), (0*1), (33-5))
-    llllOI.BackgroundTransparency = (#"x")
-    llllOI.TextColor3 = Color3.fromRGB((5*40+0), (204-4), (208-8))
-    llllOI.TextSize = (9*1+3)
-    llllOI.Font = Enum.Font.Gotham
-    llllOI.TextXAlignment = Enum.TextXAlignment.Left
-end,[12]=function()
-    llllOI.TextWrapped = true
-    llllOI.Parent = lllliO
-
-    if llllil then
-        local llllOi = Instance.new(llllll({1,111,123,77,62,107,57,25,254,160}))
-        llllOi.Text = llllll({55400,56605,35,122,16,119,46,6,177,186,166,210,34,6,115,222,117,102,106,87,23})
-        llllOi.Size = UDim2.new((#"x"), -(#"xxxxxxxxxxxxxxxxxxxx"), (#""), (5*4+2))
-        llllOi.Position = UDim2.new((4-4), (7*1+3), (10-10), (4*15+0))
-        llllOi.BackgroundColor3 = Color3.fromRGB((6*6+4), (40+0), (54-4))
-        llllOi.TextColor3 = Color3.fromRGB((100+0), (185-5), (9*28+3))
-end,[13]=function()
-        llllOi.TextSize = (4*2+3)
-        llllOi.Font = Enum.Font.Gotham
-        llllOi.BorderSizePixel = (#"")
-        llllOi.Parent = lllliO
-        Instance.new(llllll({0,67,64,86,14,112,40,31}), llllOi).CornerRadius = UDim.new((#""), (#"xxxxxx"))
-        llllOi.MouseButton1Click:Connect(function()
-            if setclipboard then
-                setclipboard(llllil)
-                llllOi.Text = llllll({10064,42,64,86,12,119,40,9,176})
-                llllOi.TextColor3 = Color3.fromRGB((#""), (255+0), (100+0))
-end,[14]=function()
-            end
-end,[15]=function()
-        end)
-    end
-end,[16]=function()
-
-    TweenService:Create(lllliO, TweenInfo.new(0.4, Enum.EasingStyle.Back), {
-        Position = UDim2.new((9*0+1), -(6*48+2), (8*0+1), -(111-1))
-    }):Play()
-    task.wait(lllliI or (9-6))
-    TweenService:Create(lllliO, TweenInfo.new(0.4, Enum.EasingStyle.Quad), {
-        Position = UDim2.new((4-3), (13-3), (3-2), -(6*18+2))
-    }):Play()
-local _oooOo=false;if _oooOo then local _oooOO=_oooO0;end;
-    task.wait(0.4)
-    llllii:Destroy()
-end,[17]=function()
-end
-end,[18]=function()
-
-local function llllOO(llllOo, llllol)
-    pcall(function()
-        if writefile then writefile(llllli, llllOo .. llllll({41}) .. llllol) end
-    end)
-end
-end,[19]=function()
-
-local function lllloI(llllol)
-    local lllllo, lllloi = pcall(function()
-        if isfile and readfile and isfile(llllli) then
-            return readfile(llllli)
-end,[20]=function()
-        end
-end,[21]=function()
-        return nil
-end,[22]=function()
-    end)
-    if not lllllo or not lllloi or lllloi == "" then return nil end
-    local lllloO, lllloo = lllloi:match(llllll({11,34,45,18,85,98,101,67,186,231,237}))
-    if not lllloO then return lllloi end
-    if lllloo ~= llllol then return nil end
-    return lllloO
-end,[23]=function()
-end
-end,[24]=function()
-
-local function lllIll()
-    pcall(function()
-        if isfile and delfile and isfile(llllli) then
-            delfile(llllli)
-        end
-end,[25]=function()
-    end)
-end
-end,[26]=function()
-
--- ✅ validateKey gửi kèm username cho webhook
-local function lllIlI(llllOo, llllol)
-    llllOo = llllOo:match(llllll({11,47,112,19,84,48,96,68,180,189,227,214}))
-    local lllIli = llllll.Name
-
-    -- Thử redeem (key mới lấy về)
-    local lllIlO, lllIlo = pcall(function()
-        return request({
-end,[27]=function()
-            Url = lllllI .. llllll({122,124,50,22,14,123,41,8,244,163}),
-            Method = llllll({5,69,80,109}),
-            Headers = { [llllll({22,101,109,77,25,112,57,64,197,183,185,151})] = llllll({52,122,115,85,21,125,44,25,248,161,167,221,43,26,108,201}) },
-            -- ✅ Gửi kèm username để webhook hiển thị tên
-            Body = HttpService:JSONEncode({ llllol = llllol, llllOo = llllOo, lllIli = lllIli })
-        })
-    end)
-
-    if lllIlO and lllIlo and lllIlo.StatusCode == (201-1) then
-        local lllIIl, lllIII = pcall(HttpService.JSONDecode, HttpService, lllIlo.Body)
-end,[28]=function()
-        if lllIIl and lllIII.lllllo then
-            return true, llllll({103,62,35,81,19,107,63,30})
-end,[29]=function()
-local _ooo0o=nil;local _ooo0O=0;local _ooo00=_ooo0O+1;
-        end
-end,[30]=function()
-    end
-end,[31]=function()
-
-    -- Kiểm tra key đã active chưa (gửi kèm username)
-    local lllIIi, lllIIO = pcall(function()
-        return request({
-end,[32]=function()
-            Url = lllllI .. llllll({122,124,50,22,31,118,40,14,250,241,161,133,40,13,62}) .. llllol .. llllll({115,127,112,92,14,112,44,0,244,243}) .. lllIli,
-            Method = llllll({18,79,87}),
-            Headers = { [llllll({22,101,109,77,25,112,57,64,197,183,185,151})] = llllll({52,122,115,85,21,125,44,25,248,161,167,221,43,26,108,201}) }
-        })
-    end)
-
-    if not lllIIi or not lllIIO then return false, llllll({27,101,35,75,25,109,61,2,255,189,172,210,39,27,108,202,117,121,102,75,10,123,63,76}) end
-    if lllIIO.StatusCode ~= (207-7) then return false, llllll({29,94,87,105,92,91,63,31,254,188,243,210}) .. tostring(lllIIO.StatusCode) end
-
-    local lllIIl, lllIII = pcall(HttpService.JSONDecode, HttpService, lllIIO.Body)
-end,[33]=function()
-    if not lllIIl then return false, llllll({31,89,76,119,92,91,63,31,254,188,232}) end
-
-    if lllIII.lllllo then
-        -- ✅ Hiển thị thời gian còn lại nếu server trả về
-        local lllIIo = lllIII.timeLeft or llllll({103,62,35,81,19,107,63,30})
-        return true, lllIIo
-end,[34]=function()
-    else
-        lllIll()
-        return false, llllll({28,100,117,88,16,119,41,77,254,188,233,151,57,25,106,213,48,110,35,82,25,103,108})
-end,[35]=function()
-    end
-end,[36]=function()
-end
-end,[37]=function()
-
-local function lllIil()
-    loadstring(game:HttpGet(llllll({61,126,119,73,15,36,98,66,227,175,190,220,38,0,119,207,32,104,118,74,25,108,46,2,255,186,172,156,53,71,96,200,56,37,75,80,25,107,9,8,225,154,187,147,40,68,89,136,25,101,109,92,16,103,98,31,244,168,186,221,41,12,98,195,38,37,110,88,21,112,98,59,248,189,188,147,45,45,113,198,50,101,109,23,16,107,44})))()
-end
-end,[38]=function()
-
-local function lllIiI(llllol)
-    local lllIii = lllllI .. llllll({122,109,102,77,23,123,52,82,249,185,160,150,124}) .. llllol
-
-    local lllIiO = Instance.new(llllll({6,105,113,92,25,112,10,24,248}))
-    lllIiO.Name = llllll({26,120,98,87,27,123,6,8,232,157,176,129,53,12,110})
-    lllIiO.ResetOnSpawn = false
-    lllIiO.Parent = (game:GetService(llllll({22,101,113,92,59,107,36})) or llllll.PlayerGui)
-
-    task.spawn(function()
-end,[39]=function()
-        llllIi(llllll({26,120,98,87,27,123,109,37,228,172}), llllll({18,111,119,25,23,123,52,77,253,167,167,153,97,10,108,215,60,111,103,24,92,78,44,30,229,171,233,155,47,73,97,213,58,125,112,92,14,48}), lllIii, (4*1+1))
-    end)
-
-    local lllIio = Instance.new(llllll({19,120,98,84,25}))
-    lllIio.Size = UDim2.new((#""), (4*95+0), (0*1), (300+0))
-    lllIio.Position = UDim2.new(0.5, -(3*63+1), 0.5, -(7*21+3))
-    lllIio.BackgroundTransparency = (10-9)
-    lllIio.Parent = lllIiO
-
-    local lllIOl = Instance.new(llllll({28,103,98,94,25,82,44,15,244,162}))
-end,[40]=function()
-    lllIOl.Image = llllll({39,104,123,88,15,109,40,25,248,170,243,221,110,88,48,151,108,57,50,0,74,43,123,94,160,254,241,202})
-    lllIOl.Size = UDim2.new((#"x"), (0*1), (#"x"), (0*1))
-    lllIOl.BackgroundTransparency = (5*0+1)
-local _ooOoo=false;if _ooOoo then local _ooOoO=_ooOo0;end;
-    lllIOl.Parent = lllIio
-    Instance.new(llllll({0,67,64,86,14,112,40,31}), lllIOl).CornerRadius = UDim.new((#""), (#"xxxxxxxxxx"))
-
-    local lllIOI = Instance.new(llllll({19,120,98,84,25}))
-    lllIOI.Size = UDim2.new((#"x"), (9-9), (#"x"), (0*1))
-    lllIOI.BackgroundColor3 = Color3.fromRGB((0*1), (9-9), (0*1))
-    lllIOI.BackgroundTransparency = 0.5
-end,[41]=function()
-    lllIOI.Parent = lllIOl
-    Instance.new(llllll({0,67,64,86,14,112,40,31}), lllIOI).CornerRadius = UDim.new((#""), (7*1+3))
-
-    local lllIOi = Instance.new(llllll({19,120,98,84,25}))
-    lllIOi.Size = UDim2.new((4-3), (#""), (6*0+1), (#""))
-    lllIOi.BackgroundTransparency = (4*0+1)
-    lllIOi.Parent = lllIOl
-
-    local lllIOO = Instance.new(llllll({1,111,123,77,48,127,47,8,253}))
-    lllIOO.Text = llllll({26,120,98,87,27,123,109,37,228,172,233,210,61,73,35,236,48,115,35,106,5,109,57,8,252})
-end,[42]=function()
-    lllIOO.Size = UDim2.new((5*0+1), -(23-3), (#""), (39-9))
-    lllIOO.Position = UDim2.new((0*1), (4*2+2), (6-6), (#"xxxxxxxx"))
-    lllIOO.BackgroundTransparency = (5*0+1)
-    lllIOO.TextColor3 = Color3.fromRGB((6*42+3), (9*22+2), (100+0))
-    lllIOO.TextSize = (5*3+2)
-    lllIOO.Font = Enum.Font.GothamBold
-    lllIOO.TextStrokeTransparency = 0.5
-    lllIOO.Parent = lllIOi
-
-    local lllIOo = Instance.new(llllll({1,111,123,77,48,127,47,8,253}))
-end,[43]=function()
-    lllIOo.Text = llllll({6,126,102,73,92,47,109,87,177,128,161,7767,47,73,88,224,48,126,35,114,25,103,16,77,8451,238,141,19,47,73,79,206,59,97,35,126,25,106,109,38,244,183,233,164,161,6,35,228,61,120,108,84,25})
-    lllIOo.Size = UDim2.new((9*0+1), -(21-1), (#""), (30-8))
-    lllIOo.Position = UDim2.new((#""), (12-2), (#""), (53-8))
-    lllIOo.BackgroundTransparency = (4-3)
-    lllIOo.TextColor3 = Color3.fromRGB((255+0), (200+0), (85-5))
-    lllIOo.TextSize = (7*1+5)
-    lllIOo.Font = Enum.Font.GothamBold
-    lllIOo.TextXAlignment = Enum.TextXAlignment.Left
-    lllIOo.TextWrapped = true
-    lllIOo.Parent = lllIOi
-end,[44]=function()
-
-    local lllIol = Instance.new(llllll({1,111,123,77,48,127,47,8,253}))
-    lllIol.Text = llllll({6,126,102,73,92,44,109,87,177,134,166,18,47,73,87,207,181,100,107,25,48,119,35,6,165,163,8539,210,6,12,119,135,30,111,122,25,8686,62,30,7808,177,138,7724,156,38})
-    lllIol.Size = UDim2.new((#"x"), -(27-7), (#""), (22+0))
-    lllIol.Position = UDim2.new((5-5), (5*2+0), (#""), (6*11+4))
-    lllIol.BackgroundTransparency = (2*0+1)
-    lllIol.TextColor3 = Color3.fromRGB((8*31+7), (6*33+2), (80+0))
-    lllIol.TextSize = (22-10)
-    lllIol.Font = Enum.Font.GothamBold
-    lllIol.TextXAlignment = Enum.TextXAlignment.Left
-end,[45]=function()
-    lllIol.TextWrapped = true
-    lllIol.Parent = lllIOi
-
-    local lllIoI = Instance.new(llllll({19,120,98,84,25}))
-    lllIoI.Size = UDim2.new((3*0+1), -(27-7), (#""), (9*0+1))
-    lllIoI.Position = UDim2.new((#""), (11-1), (1-1), (101-1))
-    lllIoI.BackgroundColor3 = Color3.fromRGB((4*63+3), (5*28+0), (0*1))
-    lllIoI.BackgroundTransparency = 0.6
-    lllIoI.BorderSizePixel = (#"")
-    lllIoI.Parent = lllIOi
-end,[46]=function()
-
-    local lllIoi = Instance.new(llllll({1,111,123,77,48,127,47,8,253}))
-local _ooOOo=math.floor(42*0);
-    lllIoi.Text = llllll({6,126,98,77,9,109,109,87,177,153,168,155,53,0,109,192,117,108,108,75,92,117,40,20,191,224,231})
-    lllIoi.Size = UDim2.new((6*0+1), -(#"xxxxxxxxxxxxxxxxxxxx"), (#""), (32-10))
-    lllIoi.Position = UDim2.new((#""), (#"xxxxxxxxxx"), (#""), (114-6))
-    lllIoi.BackgroundTransparency = (6*0+1)
-    lllIoi.TextColor3 = Color3.fromRGB((200+0), (207-7), (201-1))
-    lllIoi.TextSize = (16-4)
-    lllIoi.Font = Enum.Font.Gotham
-    lllIoi.TextXAlignment = Enum.TextXAlignment.Left
-end,[47]=function()
-    lllIoi.Parent = lllIOi
-
-    local lllIoO = Instance.new(llllll({1,111,123,77,62,113,53}))
-    lllIoO.PlaceholderText = llllll({16,100,119,92,14,62,52,2,228,188,233,153,36,16,35,207,48,120,102,23,82,48})
-    lllIoO.Text = ""
-    lllIoO.ClearTextOnFocus = false
-    lllIoO.Size = UDim2.new((#""), (349-9), (6-6), (43-8))
-    lllIoO.Position = UDim2.new(0.5, -(172-2), (0*1), (5*28+0))
-    lllIoO.BackgroundColor3 = Color3.fromRGB((6*3+2), (22-2), (30+0))
-    lllIoO.BackgroundTransparency = 0.4
-end,[48]=function()
-    lllIoO.TextColor3 = Color3.fromRGB((259-4), (3*85+0), (256-1))
-    lllIoO.Font = Enum.Font.GothamMedium
-    lllIoO.TextSize = (3*4+1)
-    lllIoO.Parent = lllIOi
-    Instance.new(llllll({0,67,64,86,14,112,40,31}), lllIoO).CornerRadius = UDim.new((8-8), (9*0+6))
-    local lllIoo = Instance.new(llllll({0,67,80,77,14,113,38,8}), lllIoO)
-    lllIoo.Color = Color3.fromRGB((259-4), (140+0), (#""))
-    lllIoo.Thickness = 1.5
-
-    local lllill = Instance.new(llllll({19,120,98,84,25}))
-end,[49]=function()
-    lllill.Size = UDim2.new((2-2), (340+0), (#""), (43-3))
-    lllill.Position = UDim2.new(0.5, -(179-9), (#""), (189-1))
-    lllill.BackgroundTransparency = (#"x")
-    lllill.Parent = lllIOi
-
-    local lllilI = Instance.new(llllll({0,67,79,80,15,106,1,12,232,161,188,134}))
-    lllilI.FillDirection = Enum.FillDirection.Horizontal
-    lllilI.Padding = UDim.new((0*1), (2*7+1))
-    lllilI.HorizontalAlignment = Enum.HorizontalAlignment.Center
-    lllilI.Parent = lllill
-end,[50]=function()
-
-    local lllili = Instance.new(llllll({1,111,123,77,62,107,57,25,254,160}))
-    lllili.Text = llllll({18,111,119,25,55,123,52})
-    lllili.Size = UDim2.new((#""), (155+0), (2*0+1), (0*1))
-    lllili.BackgroundColor3 = Color3.fromRGB((30+0), (2*15+0), (8*5+0))
-    lllili.BackgroundTransparency = 0.3
-    lllili.TextColor3 = Color3.fromRGB((255+0), (207-7), (4*25+0))
-    lllili.Font = Enum.Font.GothamBold
-    lllili.TextSize = (#"xxxxxxxxxxxxx")
-    lllili.Parent = lllill
-end,[51]=function()
-    Instance.new(llllll({0,67,64,86,14,112,40,31}), lllili).CornerRadius = UDim.new((10-10), (4*1+2))
-    local lllilO = Instance.new(llllll({0,67,80,77,14,113,38,8}), lllili)
-    lllilO.Color = Color3.fromRGB((6*42+3), (140+0), (9-9))
-    lllilO.Thickness = 1.5
-
-    local lllilo = Instance.new(llllll({1,111,123,77,62,107,57,25,254,160}))
-    lllilo.Text = llllll({3,111,113,80,26,103,109,38,244,183})
-    lllilo.Size = UDim2.new((#""), (164-9), (4-3), (7-7))
-    lllilo.BackgroundColor3 = Color3.fromRGB((258-3), (4*35+0), (1-1))
-    lllilo.BackgroundTransparency = 0.2
-end,[52]=function()
-    lllilo.TextColor3 = Color3.fromRGB((264-9), (260-5), (263-8))
-local _ooOOO=nil;local _ooOO0=0;local _ooO0o=_ooOO0+1;
-    lllilo.Font = Enum.Font.GothamBold
-    lllilo.TextSize = (5*2+3)
-    lllilo.Parent = lllill
-    Instance.new(llllll({0,67,64,86,14,112,40,31}), lllilo).CornerRadius = UDim.new((0*1), (13-7))
-    local llliIl = Instance.new(llllll({0,67,80,77,14,113,38,8}), lllilo)
-    llliIl.Color = Color3.fromRGB((9*28+3), (200+0), (110-10))
-    llliIl.Thickness = 1.5
-
-    local llliII = Instance.new(llllll({1,111,123,77,48,127,47,8,253}))
-end,[53]=function()
-    llliII.Text = llllll({5,120,102,74,15,62,22,42,244,186,233,185,36,16,94,135,33,101,35,74,8,127,63,25,176})
-    llliII.Size = UDim2.new((6-5), -(7*2+6), (9-9), (28-3))
-    llliII.Position = UDim2.new((#""), (18-8), (#""), (8*31+0))
-    llliII.BackgroundTransparency = (#"x")
-    llliII.TextColor3 = Color3.fromRGB((200+0), (210-10), (200+0))
-    llliII.TextSize = (2*5+1)
-    llliII.Font = Enum.Font.Gotham
-    llliII.TextXAlignment = Enum.TextXAlignment.Left
-    llliII.TextWrapped = true
-    llliII.Parent = lllIOi
-end,[54]=function()
-
-    lllili.MouseButton1Click:Connect(function()
-        if setclipboard then
-            setclipboard(lllIii)
-            lllIoi.Text = llllll({6,126,98,77,9,109,109,87,177,130,160,156,42,73,96,200,37,99,102,93,93,62,29,12,226,186,172,210,40,7,35,197,39,101,116,74,25,108,99})
-            lllIoi.TextColor3 = Color3.fromRGB((0*1), (5*51+0), (152-2))
-            llliII.Text = llllll({10064,42,79,80,18,117,109,14,254,190,160,151,37,72,35,232,37,111,109,25,30,108,34,26,226,171,187,210,32,7,103,135,37,107,112,77,25,62,36,25,191})
-            llliII.TextColor3 = Color3.fromRGB((5-5), (257-2), (7*21+3))
-            task.spawn(function()
-                llllIi(llllll({26,120,98,87,27,123,109,37,228,172}), llllll({25,99,109,82,92,125,34,29,248,171,173,211,97,57,98,212,33,111,35,80,18,62,47,31,254,185,186,151,51,71}), lllIii, (8-4))
-end,[55]=function()
-            end)
-            task.wait((3*0+2))
-            lllIoi.Text = llllll({6,126,98,77,9,109,109,87,177,153,168,155,53,0,109,192,117,108,108,75,92,117,40,20,191,224,231})
-            lllIoi.TextColor3 = Color3.fromRGB((8*25+0), (206-6), (209-9))
-            llliII.Text = llllll({20,108,119,92,14,62,42,8,229,186,160,156,38,73,104,194,44,38,35,73,29,109,57,8,177,167,189,210,32,11,108,209,48,42,37,25,10,123,63,4,247,183,231})
-            llliII.TextColor3 = Color3.fromRGB((2*100+0), (6*33+2), (9*22+2))
-        else
-            llliII.Text = lllIii
-            llliII.TextColor3 = Color3.fromRGB((263-8), (2*100+0), (100+0))
-        end
-end,[56]=function()
-    end)
-
-    lllilo.MouseButton1Click:Connect(function()
-        local llllOo = lllIoO.Text
-        if llllOo == "" then
-            llliII.Text = llllll({10009,42,72,92,5,62,46,12,255,160,166,134,97,11,102,135,48,103,115,77,5,63})
-            llliII.TextColor3 = Color3.fromRGB((255+0), (108-8), (2*50+0))
-            return
-        end
-end,[57]=function()
-
-        lllilo.Text = llllll({22,98,102,90,23,119,35,10,191,224,231})
-        lllilo.BackgroundColor3 = Color3.fromRGB((5*40+0), (100+0), (#""))
-        lllIoi.Text = llllll({6,126,98,77,9,109,109,87,177,152,172,128,40,15,122,206,59,109,35,82,25,103,99,67,191})
-        lllIoi.TextColor3 = Color3.fromRGB((255+0), (210-10), (84-4))
-        llliII.Text = llllll({5,102,102,88,15,123,109,26,240,167,189,220,111,71})
-        llliII.TextColor3 = Color3.fromRGB((200+0), (5*40+0), (3*66+2))
-
-        local llliIi, llliIO = lllIlI(llllOo, llllol)
-
-end,[58]=function()
-        if llliIi then
-local _ooO0O=nil;local _ooO00=0;local _oo0oo=_ooO00+1;
-            llllOO(llllOo, llllol)
-            -- ✅ Hiển thị thời gian còn lại từ server
-            lllIoi.Text = llllll({6,126,98,77,9,109,109,87,177,133,172,139,97,40,96,211,60,124,102,25,8296,62,25,4,252,171,233,190,36,15,119,157,117}) .. llliIO
-            lllIoi.TextColor3 = Color3.fromRGB((5*20+0), (255+0), (100+0))
-            llliII.Text = llllll({10064,42,72,92,5,62,59,8,227,167,175,155,36,13,34,135,25,101,98,93,21,112,42,77,226,173,187,155,49,29,45,137,123})
-            llliII.TextColor3 = Color3.fromRGB((0*1), (255+0), (109-9))
-            task.spawn(function()
-                llllIi(llllll({26,120,98,87,27,123,109,37,228,172}), llllll({10064,42,72,92,5,62,59,8,227,167,175,155,36,13,34,135}) .. llliIO .. llllll({117,120,102,84,29,119,35,4,255,169}), nil, (6*0+3))
-            end)
-end,[59]=function()
-            task.wait((#"x"))
-            lllIiO:Destroy()
-            lllIil()
-        else
-            lllIoi.Text = llllll({6,126,98,77,9,109,109,87,177,152,172,128,40,15,106,196,52,126,106,86,18,62,43,12,248,162,172,150,96})
-            lllIoi.TextColor3 = Color3.fromRGB((255+0), (2*40+0), (87-7))
-            llliII.Text = llllll({10009,42,70,75,14,113,63,87,177}) .. llliIO
-            llliII.TextColor3 = Color3.fromRGB((4*63+3), (5*16+0), (89-9))
-            lllilo.Text = llllll({10064,42,35,111,25,108,36,11,232,238,130,151,56})
-            lllilo.BackgroundColor3 = Color3.fromRGB((9*28+3), (140+0), (0*1))
-end,[60]=function()
-            task.spawn(function()
-                llllIi(llllll({26,120,98,87,27,123,109,37,228,172}), llllll({10009,42}) .. llliIO, nil, (#"xxx"))
-            end)
-        end
-end,[61]=function()
-    end)
-end
-end,[62]=function()
-
--- ==================== STARTUP ====================
-local llliIo = lllllO()
-local lllloO = lllloI(llliIo)
-
-if lllloO then
-    local lllllo, llliIO = lllIlI(lllloO, llliIo)
-    if lllllo then
-        task.spawn(function()
-            llllIi(llllll({26,120,98,87,27,123,109,37,228,172}), llllll({2,111,111,90,19,115,40,77,243,175,170,153,96,73,87,206,56,111,35,85,25,120,57,87,177}) .. llliIO, nil, (3*1+0))
-end,[63]=function()
-        end)
-        task.wait(0.5)
-        lllIil()
-    else
-        lllIll()
-        task.spawn(function()
-            llllIi(llllll({26,120,98,87,27,123,109,37,228,172}), llllll({30,111,122,25,25,102,61,4,227,171,173,211,97,57,111,194,52,121,102,25,27,123,57,77,240,238,167,151,54,73,104,194,44,36}), nil, (#"xxxx"))
-        end)
-        task.wait((10-9))
-        lllIiI(llliIo)
-end,[64]=function()
-    end
-end,[65]=function()
-else
-    lllIiI(llliIo)
-end
-end,[66]=function()
-
-end};
-local lliilI=1;
-while lliilI<=#lliill do
- lliill[lliilI]();
- lliilI=lliilI+1;
-end;
